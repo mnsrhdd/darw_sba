@@ -46,7 +46,7 @@ export default function Footer() {
           <div className="contact-details">
             <p>📍 43 شارع قاضي بن قاضي، سيدي بلعباس</p>
             <p>📞 048.71.51.79</p>
-            <p>📧 cislam@marw.dz</p>
+           {/*  <p>📧 dsidibelabbes@marw.dz</p> */}
           </div>
         </div>
       </div>

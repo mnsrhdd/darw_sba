@@ -40,50 +40,125 @@ export default function Navbar() {
 
       <header dir="rtl" className="nav-header">
         <nav className="nav-container">
-          <div style={{ color: "white", fontWeight: "bold", fontSize: "1.2rem" }}>
-            <Link href="/" onClick={closeMenu} style={{ color: "inherit", textDecoration: "none" }}>
+          <div
+            style={{ color: "white", fontWeight: "bold", fontSize: "1.2rem" }}
+          >
+            <Link
+              href="/"
+              onClick={closeMenu}
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
               مديرية الشؤون الدينية والأوقاف
             </Link>
           </div>
 
           <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
-            <span></span><span></span><span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
 
           <div className="nav-links">
-            <Link href="/" className="nav-link" onClick={closeMenu}>الرئيسية</Link>
+            <Link href="/" className="nav-link" onClick={closeMenu}>
+              الرئيسية
+            </Link>
 
             <div className="dropdown">
               <span className="nav-link">المديــريـة ▾</span>
               <div className="dropdown-menu">
-                <Link href="/Direction/Historique" className="dropdown-item" onClick={closeMenu}>نبذة تاريخية</Link>
-                <Link href="/Direction/Organigramme" className="dropdown-item" onClick={closeMenu}>الهيكل التنظيمي</Link>
-                <Link href="/Direction/Fonction" className="dropdown-item" onClick={closeMenu}>مــهام المديرية</Link>
+                <Link
+                  href="/Direction/Historique"
+                  className="dropdown-item"
+                  onClick={closeMenu}
+                >
+                  نبذة تاريخية
+                </Link>
+                <Link
+                  href="/Direction/Organigramme"
+                  className="dropdown-item"
+                  onClick={closeMenu}
+                >
+                  الهيكل التنظيمي
+                </Link>
+                <Link
+                  href="/Direction/Fonction"
+                  className="dropdown-item"
+                  onClick={closeMenu}
+                >
+                  مــهام المديرية
+                </Link>
               </div>
             </div>
 
             <div className="dropdown">
               <span className="nav-link">المديــر ▾</span>
               <div className="dropdown-menu">
-                <Link href="/Directeur/CV" className="dropdown-item" onClick={closeMenu}>السيرة الذاتية</Link>
-                <Link href="/Directeur/Powers" className="dropdown-item" onClick={closeMenu}>صلاحيات المدير</Link>
-                <Link href="/Directeur/Activities" className="dropdown-item" onClick={closeMenu}>نشاطات المدير</Link>
+                <Link
+                  href="/Directeur/CV"
+                  className="dropdown-item"
+                  onClick={closeMenu}
+                >
+                  السيرة الذاتية
+                </Link>
+                <Link
+                  href="/Directeur/Powers"
+                  className="dropdown-item"
+                  onClick={closeMenu}
+                >
+                  صلاحيات المدير
+                </Link>
+                <Link
+                  href="/Directeur/Activities"
+                  className="dropdown-item"
+                  onClick={closeMenu}
+                >
+                  نشاطات المدير
+                </Link>
               </div>
             </div>
 
-            <Link href="/Ensegnement" className="nav-link" onClick={closeMenu}>التعليم القرآني</Link>
+            <Link href="/Ensegnement" className="nav-link" onClick={closeMenu}>
+              التعليم القرآني
+            </Link>
 
             <div className="dropdown">
               <span className="nav-link">خدمات إلكترونية ▾</span>
               <div className="dropdown-menu">
-                <Link href="/ServiceElectronique/Fatwa" className="dropdown-item" onClick={closeMenu}>الفتوى الالكترونية</Link>
-                <a href="https://khadamates.marw.dz/home" target="_blank" className="dropdown-item" onClick={closeMenu}>بوابة الخدمات الالكترونية</a>
-                <Link href="/ServiceElectronique/I3tina9" className="dropdown-item" onClick={closeMenu}>فضاء اعتناق الاسلام</Link>
-                <Link href="/ServiceElectronique/PrayerTimes" className="dropdown-item" onClick={closeMenu}>مواقيت الصلاة</Link>
+                <Link
+                  href="/ServiceElectronique/Fatwa"
+                  className="dropdown-item"
+                  onClick={closeMenu}
+                >
+                  الفتوى الالكترونية
+                </Link>
+                <a
+                  href="https://khadamates.marw.dz/home"
+                  target="_blank"
+                  className="dropdown-item"
+                  onClick={closeMenu}
+                >
+                  بوابة الخدمات الالكترونية
+                </a>
+                <Link
+                  href="/ServiceElectronique/I3tina9"
+                  className="dropdown-item"
+                  onClick={closeMenu}
+                >
+                  فضاء اعتناق الاسلام
+                </Link>
+                <Link
+                  href="/ServiceElectronique/PrayerTimes"
+                  className="dropdown-item"
+                  onClick={closeMenu}
+                >
+                  مواقيت الصلاة
+                </Link>
               </div>
             </div>
 
-            <Link href="/Contact" className="nav-link" onClick={closeMenu}>اتصل بنا</Link>
+            <Link href="/Contact" className="nav-link" onClick={closeMenu}>
+              اتصل بنا
+            </Link>
           </div>
         </nav>
       </header>
